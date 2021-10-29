@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to left, rgb(255, 158, 158), rgb(255, 201, 139));
+}
+
+.container{
+    margin-inline: auto;
+    width: min(90%, 500px); /*stops growing after 1100px.. so y(100%-x%)???*/
+}
+
+.calculator{
+    border: 2px solid black;
+    margin-top: 100px;
+    background-color: rgb(58, 58, 58);
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.screen{
+    margin: 20px auto;
+}
+.screen div{
+    width: min(90%, 400px);
+    border: 0px solid grey;
+    background-color: white;
+    margin: 0px auto;
+    padding: 5px 10px 0 0 ;
+}
+.topS{
+    text-align: end;
+    height: 32px;
+    font-size: 16px;
+}
+.botS{
+    text-align: end;
+    height: 48px;
+    font-size: 24px;
+}
+
+
+button{
+    width: 60px;
+    height: 2em;
+    margin: 5px;
+    font-weight: bold;
+}
