@@ -43,9 +43,23 @@ buttonAc.addEventListener('click', function(){
 
 for(let i=0; i<buttonNumber.length; i++){
     buttonNumber[i].addEventListener('click', function(){
-        console.log(buttonNumber[i].textContent);
-        botScTempContent.push(buttonNumber[i].textContent);
-        combineInput(); 
+        let tempSet = new Set(botScTempContent);
+        if (tempSet.has('.')){
+            if (buttonNumber[i].textContent == '.'){
+
+            }
+            else{
+                botScTempContent.push(buttonNumber[i].textContent);
+                combineInput(); 
+            }
+            
+        }
+        else{
+            botScTempContent.push(buttonNumber[i].textContent);
+             combineInput(); 
+        }
+        
+
     })
 }
 
